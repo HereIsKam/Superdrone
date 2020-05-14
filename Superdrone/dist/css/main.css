@@ -1,0 +1,62 @@
+@import 'fonts.css';
+@import 'reset.css';
+@import 'variables.css';
+@import 'base.css';
+
+.header {
+  padding: 65px 50px;
+  color: var(--hero-color);
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.nav-item a {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 20px;
+  position: relative;
+}
+
+.logo:before,
+.nav-item a:before {
+  content: '';
+  height: 1px;
+  width: 0px;
+  background-color: var(--hero-color);
+  position: absolute;
+  top: calc(100% + 2px);
+  transition: 0.2s 0.1s cubic-bezier(1, .35, .34, .89);
+}
+
+.nav-item a:hover:before,
+.logo:hover:before {
+  width: 100%;
+  transition: 0.2s 0.1s cubic-bezier(1, .35, .34, .89);
+}
+
+.cart {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  margin-right: 5rem;
+}
+
+.cart:hover {
+  border-color: var(--hero-color)
+}
+
+.cart::before {
+  content: '';
+  background: url(../img/header-icon-cart.png);
+  width: 32px;
+  height: 27px;
+}

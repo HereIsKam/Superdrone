@@ -17,13 +17,80 @@ html {
   font-size: 10px;
 }
 
-:root.light {
+:root {
+  /* colors */
   --background: #ffffff;
+  --background-accent: #F6F6F6;
+  --hero-color: #ffffff;
+  --main-color: #000000;
+  --secondary-color: #ffffff;
+  --card-color: #000000;
+  --subheader-color: #1E2227;
+  --desription-color: #6E6E6E;
+  --footer-main-color: #5E5E5E;
+  --accent-color: #ECECEC;
 }
 
 body {
-  background-color: var(--background);
+  background-color: #000000;
+  /* var(--background); */
   font-family: 'Proxima Nova';
   font-weight: normal;
   font-size: 1.6rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1420px;
+  margin: 0 auto;
+}
+
+.section-padding {
+  padding: 150px 0 150px 0;
+}
+
+.btn {
+  padding: 10px 15px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transform: skewX(-8deg);
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.btn-fill {
+  background-color: var(--main-color);
+}
+
+.btn-outline-dark {
+  border-color: #000000;
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+
+.btn-outline-light {
+  border-color: #ffffff;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+
+.horizontal-position {
+  display: flex;
+  align-items: center;
+}
+
+.jc-space-between {
+  justify-content: space-between;
+}
+
+.jc-center {
+  justify-content: center;
 }
