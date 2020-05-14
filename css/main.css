@@ -81,7 +81,7 @@
 
 /* Hero */
 .hero {
-  padding-top: 22rem;
+  padding: 22rem 0 8rem 0;
   background: url('../img/hero-background.jpg') no-repeat 0 0 / cover;
 }
 
@@ -99,6 +99,15 @@
   color: var(--hero-color);
   margin-bottom: 5.5rem;
 
+}
+
+.hero button {
+  margin-bottom: 18rem;
+}
+
+.hero i {
+  color: var(--hero-color);
+  font-size: 3.6rem
 }
 
 /* About */
@@ -141,6 +150,7 @@
   width: 55%;
   margin: 0 auto 13rem auto;
   font-size: 1.8rem;
+  line-height: 3rem;
 }
 
 .services-card {
