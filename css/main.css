@@ -65,9 +65,7 @@
 
 .hero {
   padding-top: 220px;
-  background: url('../img/hero-background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url('../img/hero-background.jpg') no-repeat 0 0 / cover;
 }
 
 .hero h1 {
