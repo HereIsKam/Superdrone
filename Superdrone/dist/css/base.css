@@ -1,0 +1,29 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+a,
+span,
+::before,
+::after {
+  display: inline-flex;
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-size: 10px;
+}
+
+:root.light {
+  --background: #ffffff;
+}
+
+body {
+  background-color: var(--background);
+  font-family: 'Proxima Nova';
+  font-weight: normal;
+  font-size: 1.6rem;
+}
