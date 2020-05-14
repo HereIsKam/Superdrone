@@ -48,6 +48,18 @@ body {
   padding: 15rem 0;
 }
 
+.small-section-padding {
+  padding: 12rem 0;
+}
+
+.block-padding {
+  padding: 0 15px;
+}
+
+.bottom-distance {
+  margin-bottom: 5rem;
+}
+
 /* Buttons */
 .btn {
   padding: 2rem 5rem;
@@ -56,7 +68,6 @@ body {
   transform: skewX(-10deg);
   border: 2px solid transparent;
   background-color: transparent;
-  color: #ffffff;
   font-weight: bold;
 }
 
@@ -69,7 +80,8 @@ body {
 }
 
 .btn-outline-dark {
-  border-color: #000000;
+  border-color: var(--main-color);
+  color: var(--main-color);
 }
 
 .btn-outline-dark:hover {
@@ -79,11 +91,17 @@ body {
 
 .btn-outline-light {
   border-color: #ffffff;
+  color: #ffffff;
 }
 
 .btn-outline-light:hover {
   background-color: var(--secondary-color);
   color: var(--main-color);
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
 }
 
 /* Position */
@@ -102,10 +120,37 @@ body {
   justify-content: space-between;
 }
 
+.ai-start {
+  align-items: flex-start;
+}
+
 .jc-center {
   justify-content: center;
 }
 
+.jc-start {
+  justify-content: flex-start;
+}
+
 .text-center {
   text-align: center;
+}
+
+.subheader {
+  font-size: 6rem;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.services-subtitle {
+  font-size: 3.6rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+
+.services-descr {
+  font-size: 1.8rem;
+  color: var(--desription-color);
+  line-height: 3rem;
 }

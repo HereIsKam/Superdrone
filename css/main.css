@@ -1,8 +1,10 @@
+/* Imports */
 @import 'fonts.css';
 @import 'reset.css';
 @import 'variables.css';
 @import 'base.css';
 
+/* Header */
 .header {
   padding: 6.5rem 5rem;
   color: var(--hero-color);
@@ -50,6 +52,14 @@
   position: relative;
 }
 
+.cart::before {
+  content: attr(data-count);
+  background: url(../img/icon-sprite.png);
+  background-position-x: 0px;
+  width: 32px;
+  height: 27px;
+}
+
 .cart:after {
   content: '';
   position: absolute;
@@ -68,13 +78,8 @@
   transition: 0.2s linear;
 }
 
-.cart::before {
-  content: attr(data-count);
-  background: url(../img/header-icon-cart.png);
-  width: 32px;
-  height: 27px;
-}
 
+/* Hero */
 .hero {
   padding-top: 22rem;
   background: url('../img/hero-background.jpg') no-repeat 0 0 / cover;
@@ -94,4 +99,80 @@
   color: var(--hero-color);
   margin-bottom: 5.5rem;
 
+}
+
+/* About */
+.about {
+  padding-bottom: 12rem;
+}
+
+.about-info {
+  position: relative;
+}
+
+
+.about-pic {
+  position: absolute;
+  right: -1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+}
+
+.about-info p {
+  width: 50%;
+  font-size: 2.4rem;
+  line-height: 4.2rem;
+  color: var(--desription-color);
+}
+
+.about button {
+  margin-left: 1rem;
+}
+
+/* Video-slider */
+
+/* Services */
+.services h2 {
+  margin-bottom: 2rem;
+}
+
+.services-info {
+  width: 55%;
+  margin: 0 auto 13rem auto;
+  font-size: 1.8rem;
+}
+
+.services-card {
+  width: 33.33%;
+  padding-top: 12rem;
+  position: relative;
+}
+
+.services-icon-cam:before,
+.services-icon-watch:before,
+.services-icon-speed:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 15px;
+  background: url('../img/icon-sprite.png');
+}
+
+.services-icon-cam:before {
+  width: 83px;
+  height: 63px;
+  background-position-x: 80px;
+}
+
+.services-icon-watch:before {
+  width: 47px;
+  height: 62px;
+  background-position-x: 191px;
+}
+
+.services-icon-speed:before {
+  width: 64px;
+  height: 64px;
+  background-position-x: 144px;
 }
