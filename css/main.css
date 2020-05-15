@@ -8,7 +8,6 @@
 .header {
   padding: 6.5rem 5rem;
   color: var(--hero-color);
-  font-weight: bold;
   width: 100%;
   position: absolute;
   line-height: 1;
@@ -18,6 +17,10 @@
   text-transform: uppercase;
   font-size: 3.6rem;
   position: relative;
+}
+
+.nav {
+  max-width: 1830px;
 }
 
 .nav-item a {
@@ -35,32 +38,31 @@
   background-color: var(--hero-color);
   position: absolute;
   top: calc(100% + 2px);
-  transition: 0.2s 0.1s cubic-bezier(1, .35, .34, .89);
+  transition: 0.2s cubic-bezier(1, .35, .34, .89);
 }
 
 .nav-item a:hover:before,
-.logo:hover:before {
+.logo:hover:before,
+.nav-item a:focus:before,
+.logo:focus:before {
   width: 100%;
-  transition: 0.2s 0.1s cubic-bezier(1, .35, .34, .89);
+  transition: 0.2s cubic-bezier(1, .35, .34, .89);
 }
 
 .cart {
   background-color: transparent;
-  border: none;
-  border: 2px solid transparent;
   margin-right: 5rem;
   position: relative;
-}
+  cursor: pointer;
 
-.cart::before {
-  content: attr(data-count);
   background: url(../img/icon-sprite.png);
   background-position-x: 0px;
   width: 32px;
   height: 27px;
+  border: none;
 }
 
-.cart:after {
+.cart::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -70,12 +72,30 @@
   height: 50px;
   border-radius: 50%;
   border: 0px solid var(--hero-color);
-  transition: 0.2s 0.1s linear;
+  transition: 0.2s linear;
 }
 
-.cart:hover:after {
+.cart:hover:before,
+.cart:focus:before {
   border: 2px solid var(--hero-color);
   transition: 0.2s linear;
+}
+
+.cart:after {
+  content: attr(data-count);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  z-index: 1;
 }
 
 
@@ -85,11 +105,14 @@
   background: url('../img/hero-background.jpg') no-repeat 0 0 / cover;
 }
 
+.hero-content {
+  margin-bottom: 18rem;
+}
+
 .hero h1 {
   font-size: 16rem;
-  font-weight: bold;
   color: var(--hero-color);
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
   line-height: 19.2rem;
 }
 
@@ -101,35 +124,42 @@
 
 }
 
-.hero button {
-  margin-bottom: 18rem;
+
+.hero-arrows {
+  color: var(--hero-color);
+  font-size: 3.6rem;
+  animation: arrow-move 3s infinite ease;
 }
 
-.hero i {
-  color: var(--hero-color);
-  font-size: 3.6rem
+@keyframes arrow-move {
+  50% {
+    transform: translatey(-20px);
+    transition: 1s ease;
+  }
 }
 
 /* About */
 .about {
   padding-bottom: 12rem;
+  position: relative;
 }
 
 .about-info {
-  position: relative;
+  width: 50%;
 }
 
 
 .about-pic {
   position: absolute;
-  right: -1rem;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
+
+  /* картинка налазит на текст при моем разрешениии, если картинке не задать ширину */
   width: 50%;
 }
 
 .about-info p {
-  width: 50%;
   font-size: 2.4rem;
   line-height: 4.2rem;
   color: var(--desription-color);
@@ -146,16 +176,10 @@
   margin-bottom: 2rem;
 }
 
-.services-info {
-  width: 55%;
-  margin: 0 auto 13rem auto;
-  font-size: 1.8rem;
-  line-height: 3rem;
-}
+
 
 .services-card {
-  width: 33.33%;
-  padding-top: 12rem;
+  width: 30%;
   position: relative;
 }
 
@@ -185,4 +209,15 @@
   width: 64px;
   height: 64px;
   background-position-x: 144px;
+}
+
+/* Parameters */
+.parameters {
+  background-color: var(--accent-color);
+}
+
+.parameters h2 {
+  font-size: 4.8rem;
+  color: var(--main-color);
+  margin-bottom: 2.5rem;
 }

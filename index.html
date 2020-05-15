@@ -7,8 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Superdrone</title>
-  <!-- Fonts Awesome -->
-  <script src="https://kit.fontawesome.com/c6a5670004.js" crossorigin="anonymous"></script>
+
   <!-- main.css -->
   <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
@@ -17,17 +16,17 @@
   <!-- Header -->
   <header class="header">
     <nav class="nav horizontal-position jc-space-between">
-      <a href="#" class="logo">Superdrone.</a>
+      <a href="index.html" class="logo">Superdrone.</a>
 
       <ul class="nav-bar horizontal-position jc-center">
-        <li class="nav-item"><a href="#">MEET THE PRODUCT</a></li>
-        <li class="nav-item"><a href="#">MEET THE COMPANY</a></li>
-        <li class="nav-item"><a href="#">SUPPORT</a></li>
-        <li class="nav-item"><a href="#">BLOG</a></li>
+        <li class="nav-item"><a href="#">Meet the product</a></li>
+        <li class="nav-item"><a href="#">Meet the company</a></li>
+        <li class="nav-item"><a href="#">Support</a></li>
+        <li class="nav-item"><a href="#">Blog</a></li>
       </ul>
 
       <div class="nav-btns horizontal-position jc-center">
-        <button class="cart" data-count=""></button>
+        <button class="cart" data-count="2"><span class="sr-only">Cart</span></button>
         <button class="btn btn-outline-light"><span class="unskewed">Login</span></button>
       </div>
     </nav>
@@ -38,24 +37,27 @@
     <!-- Hero -->
     <section class="hero">
       <div class="container vertical-position jc-center">
-        <h1 class="text-center">Your Receptionist
-          Anywhere</h1>
-        <p class="text-center">When a user taps on a button in a mobile app, and the button pulls down a navigation,
-          that’s a
-          microinteraction.
-        </p>
-        <button class="btn btn-outline-light">
-          <span class="unskewed">Buy Now</span>
-        </button>
-        <i class="fas fa-angle-double-down"></i>
+        <div class="hero-content vertical-position jc-center">
+          <h1 class="text-center">Your Receptionist
+            Anywhere</h1>
+          <p class="text-center">When a user taps on a button in a mobile app, and the button pulls down a navigation,
+            that’s a
+            microinteraction.
+          </p>
+          <a class="btn btn-outline-light" href="#">
+            <span class="unskewed">Buy Now</span>
+          </a>
+        </div>
+        <a class="hero-arrows fas fa-angle-double-down text-center" href="#about "><span class="sr-only">Scroll
+            down</span></a>
       </div>
     </section>
 
     <!-- About -->
-    <section class="about section-padding">
+    <section class="about section-padding" id="about">
       <div class="container">
         <div class="about-info">
-          <h2 class="subheader bottom-distance">Super Light Drone</h2>
+          <h2 class="subtitle bottom-distance">Super Light Drone</h2>
           <img class="about-pic" src="img/about-pic.png" alt="drone quadrocopter">
           <p class="bottom-distance">The first good thing about microinteractions is improved usability. If the
             animation of the menu, from the
@@ -66,11 +68,10 @@
             interface that happen once a
             user interacts with something, anything. Consider them interactive but informative animations. There are
             many reasons to use microinteractions. I can give you four right now.</p>
-          <button class="btn btn-outline-dark">
+          <a class="btn btn-outline-dark" href="#">
             <span class="unskewed">Read more</span>
-          </button>
+          </a>
         </div>
-      </div>
       </div>
     </section>
 
@@ -86,30 +87,30 @@
     <!-- Serveces -->
     <section class="services small-section-padding">
       <div class="container">
-        <h2 class="subheader text-center">Super Services</h2>
-        <p class="services-info text-center">The first good thing about microinteractions is improved usability. If the
+        <h2 class="subtitle text-center">Super Services</h2>
+        <p class="description text-center">The first good thing about microinteractions is improved usability. If the
           animation of
           the menu, from the example I gave above, slides down and over the content the user was just looking at, it
           provides affirmation for the user. </p>
 
-        <div class="horizontal-position">
+        <div class="horizontal-position jc-between">
           <div class="services-card block-padding vertical-position jc-start ai-start">
-            <h3 class="services-subtitle services-icon-cam">4K RESOLUTION</h3>
-            <p class="services-descr">More specifically, microinteractions are the animations and changes of the
+            <h3 class="subtitle-small services-icon-cam">4K RESOLUTION</h3>
+            <p class="decription-small">More specifically, microinteractions are the animations and changes of the
               interface that happen once a user interacts with something, anything. Consider them interactive but
               informative animations. There are many reasons to use microinteractions. I can give you four right now.
             </p>
           </div>
           <div class="services-card block-padding vertical-position jc-start ai-start services-icon-watch">
-            <h3 class="services-subtitle services-icon-watch">TIMELAPSE</h3>
-            <p class="services-descr">More specifically, microinteractions are the animations and changes of the
+            <h3 class="subtitle-small services-icon-watch">TIMELAPSE</h3>
+            <p class="decription-small">More specifically, microinteractions are the animations and changes of the
               interface that happen once a user interacts with something, anything. Consider them interactive but
               informative animations. There are many reasons to use microinteractions. I can give you four right now.
             </p>
           </div>
           <div class="services-card block-padding vertical-position jc-start ai-start services-icon-speed">
-            <h3 class="services-subtitle">SUPER SPEED</h3>
-            <p class="services-descr">More specifically, microinteractions are the animations and changes of the
+            <h3 class="subtitle-small">SUPER SPEED</h3>
+            <p class="decription-small">More specifically, microinteractions are the animations and changes of the
               interface that happen once a user interacts with something, anything. Consider them interactive but
               informative animations. There are many reasons to use microinteractions. I can give you four right now.
             </p>
@@ -118,7 +119,22 @@
         </div>
       </div>
     </section>
+
+    <!-- Parameters -->
+    <section class="parameters small-section-padding">
+      <div class="container">
+        <h2 class="text-center">The world's first seamless drone with a very<br> lightweight hull and high travel
+          speed</h2>
+        <p class="description text-center">The V.360&#176; Camera allows you to masterfully capture the whole story with
+          a
+          premium 360&#176; camera for limitless creating. </p>
+
+      </div>
+    </section>
   </main>
+
+  <!-- Fonts Awesome -->
+  <script src="https://kit.fontawesome.com/c6a5670004.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
