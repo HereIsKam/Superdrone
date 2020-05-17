@@ -89,7 +89,15 @@ button {
 }
 
 .btn-fill {
-  background-color: var(--main-color);
+  background-color: var(--card-color);
+  color: #ffffff;
+}
+
+.btn-fill:hover,
+.btn-fill:focus {
+  background-color: #ffffff;
+  color: var(--card-color);
+  border-color: var(--card-color);
 }
 
 .btn-outline-dark {
@@ -186,4 +194,16 @@ button {
   font-size: 4.8rem;
   color: var(--main-color);
   margin-bottom: 2.5rem;
+}
+
+.marketplace-name {
+  font-size: 2.4rem;
+  color: var(--card-color);
+  margin-bottom: 2.5rem;
+}
+
+.marketplace-price {
+  font-size: 3.6rem;
+  color: var(--card-color);
+  margin-bottom: 4rem;
 }

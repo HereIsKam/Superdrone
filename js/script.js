@@ -7,6 +7,6 @@ $('.appearance-slider').slick({
   centerMode: true,
   slidesToShow: 1,
   centerPadding: '300px',
-  prevArrow: '.btn-left',
-  nextArrow: '.btn-right'
+  prevArrow: '.btn-left-app',
+  nextArrow: '.btn-right-app'
 })
