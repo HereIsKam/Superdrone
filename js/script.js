@@ -6,7 +6,7 @@ $('.slider').slick({
 $('.appearance-slider').slick({
   centerMode: true,
   slidesToShow: 1,
-  centerPadding: '100px',
+  centerPadding: '300px',
   prevArrow: '.btn-left',
   nextArrow: '.btn-right'
 })

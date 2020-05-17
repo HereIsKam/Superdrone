@@ -359,10 +359,20 @@
 
 /* Appearance */
 .appearance {
-  background-color: #000;
+  background-color: #ffffff;
 }
 
-.appearance-pic {}
+.appearance-slider-cover {
+  position: relative;
+}
+
+.appearance-slider-cover .btn-arrow {
+  color: var(--desription-color);
+}
+
+.appearance-pic {
+  margin: 0 30px;
+}
 
 .appearance-pic img {
   width: 100%;
