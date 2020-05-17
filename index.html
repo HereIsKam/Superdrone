@@ -7,7 +7,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Superdrone</title>
-
+  <!-- Slick Slider -->
+  <link rel="stylesheet" href="css/slick.css" type="text/css">
   <!-- main.css -->
   <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
@@ -76,12 +77,37 @@
     </section>
 
     <!-- Video-slider -->
-    <section class="video-slider small-section-padding">
-      <style>
-        .video-slider {
-          background-color: #333333;
-        }
-      </style>
+    <section class="video-slider">
+      <div class="slider">
+        <div class="video-slide">
+          <img src="img/video-slider-pic.jpg" alt="drones video">
+          <button class="video-button">
+            <i class="fas fa-play"></i>
+            <span class="sr-only">Play</span>
+          </button>
+        </div>
+        <div class="video-slide">
+          <img src="img/video-slider-pic.jpg" alt="drones video">
+          <button class="video-button">
+            <i class="fas fa-play"></i>
+            <span class="sr-only">Play</span>
+          </button>
+        </div>
+        <div class="video-slide">
+          <img src="img/video-slider-pic.jpg" alt="drones video">
+          <button class="video-button">
+            <i class="fas fa-play"></i>
+            <span class="sr-only">Play</span>
+          </button>
+        </div>
+      </div>
+      <button class="btn-arrow btn-left fas fa-arrow-left">
+        <span class="sr-only">Previous video</span>
+      </button>
+      <button class="btn-arrow btn-right fas fa-arrow-right">
+        <span class="sr-only">Next video</span>
+      </button>
+
     </section>
 
     <!-- Serveces -->
@@ -95,21 +121,21 @@
 
         <div class="horizontal-position jc-between">
           <div class="services-card block-padding vertical-position jc-start ai-start">
-            <h3 class="subtitle-small services-icon-cam">4K RESOLUTION</h3>
+            <h3 class="subtitle-small services-icon-cam">4K resolution</h3>
             <p class="decription-small">More specifically, microinteractions are the animations and changes of the
               interface that happen once a user interacts with something, anything. Consider them interactive but
               informative animations. There are many reasons to use microinteractions. I can give you four right now.
             </p>
           </div>
           <div class="services-card block-padding vertical-position jc-start ai-start services-icon-watch">
-            <h3 class="subtitle-small services-icon-watch">TIMELAPSE</h3>
+            <h3 class="subtitle-small services-icon-watch">Timelapse</h3>
             <p class="decription-small">More specifically, microinteractions are the animations and changes of the
               interface that happen once a user interacts with something, anything. Consider them interactive but
               informative animations. There are many reasons to use microinteractions. I can give you four right now.
             </p>
           </div>
           <div class="services-card block-padding vertical-position jc-start ai-start services-icon-speed">
-            <h3 class="subtitle-small">SUPER SPEED</h3>
+            <h3 class="subtitle-small">Super speed</h3>
             <p class="decription-small">More specifically, microinteractions are the animations and changes of the
               interface that happen once a user interacts with something, anything. Consider them interactive but
               informative animations. There are many reasons to use microinteractions. I can give you four right now.
@@ -123,18 +149,80 @@
     <!-- Parameters -->
     <section class="parameters small-section-padding">
       <div class="container">
-        <h2 class="text-center">The world's first seamless drone with a very<br> lightweight hull and high travel
+        <h2 class="small-subtitle text-center ">The world's first seamless drone with a very<br> lightweight hull and
+          high travel
           speed</h2>
         <p class="description text-center">The V.360&#176; Camera allows you to masterfully capture the whole story with
           a
           premium 360&#176; camera for limitless creating. </p>
 
+        <div class="parameters-info ">
+          <img src="img/parameters-drone.png" alt="Drone quadrocopter">
+          <dl class="parameters-data vertical-position block-padding">
+            <dt>Length</dt>
+            <dd>90 mm</dd>
+            <dt>Battery</dt>
+            <dd>180 ma * h</dd>
+            <dt>Radius of action of equipment</dt>
+            <dd>50 m</dd>
+            <dt>Receiver included</dt>
+            <dd>Yes</dd>
+            <dt>Transmitter included</dt>
+            <dd>Yes</dd>
+            <dt>Color of the fuselage</dt>
+            <dd>Black</dd>
+            <dt>Main screw diameter</dt>
+            <dd>40 mm</dd>
+            <dt>Flight time</dt>
+            <dd>7 min</dd>
+            <dt>Receiver</dt>
+            <dd>40 mm</dd>
+            <dt>Transmitter</dt>
+            <dd>2.4 GHZ, 4 channels</dd>
+            <dt>Gyroscope</dt>
+            <dd>6-AXIS</dd>
+            <dt>Need to buy</dt>
+            <dd>4 Х ААА batteries</dd>
+          </dl>
+        </div>
       </div>
     </section>
+
+    <!-- Appearance -->
+    <section class="appearance small-section-padding">
+      <div class="container">
+        <h2 class="small-subtitle text-center">Mount to anything. Anywhere.</h2>
+        <p class=" description text-center">Fully compatible with GoPro® mounts, traditional cameras and tripod designs
+          with a built in ¼ – 20 UNC tripod housing, we’re made to mount anything. From helmets to handlebars, we go
+          where you go.</p>
+      </div>
+      <div class="appearance-slider">
+        <div class="appearance-pic">
+          <img src="img/appearance-slide2.jpg" alt="drones quadrocopter">
+        </div>
+        <div class="appearance-pic ">
+          <img src="img/appearance-slide1.jpg" alt="drones quadrocopter">
+        </div>
+        <div class="appearance-pic">
+          <img src="img/appearance-slide1.jpg" alt="drones quadrocopter">
+        </div>
+
+
+      </div>
+
+    </section>
+
   </main>
 
+  <!-- JQuery 3.5.1 -->
+  <script src="js/jquery3.5.1.js"></script>
+  <!-- Slick slider -->
+  <script src="js/slick.min.js"></script>
   <!-- Fonts Awesome -->
   <script src="https://kit.fontawesome.com/c6a5670004.js" crossorigin="anonymous"></script>
+  <!-- Script JS -->
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>

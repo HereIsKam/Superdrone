@@ -15,6 +15,7 @@ span,
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -36,6 +37,7 @@ body {
   font-family: 'Proxima Nova';
   font-weight: normal;
   font-size: 1.6rem;
+
 }
 
 .container {
@@ -68,6 +70,10 @@ body {
 }
 
 /* Buttons */
+button {
+  cursor: pointer;
+}
+
 .btn {
   padding: 2rem 5rem;
   font-size: 1.8rem;
@@ -156,10 +162,11 @@ body {
 }
 
 .description {
-  width: 55%;
+  width: 57%;
   margin: 0 auto 13rem auto;
   font-size: 1.8rem;
   line-height: 3rem;
+  color: var(--desription-color);
 }
 
 .subtitle-small {
@@ -173,4 +180,10 @@ body {
   font-size: 1.8rem;
   color: var(--desription-color);
   line-height: 3rem;
+}
+
+.small-subtitle {
+  font-size: 4.8rem;
+  color: var(--main-color);
+  margin-bottom: 2.5rem;
 }
