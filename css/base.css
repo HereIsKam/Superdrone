@@ -82,51 +82,80 @@ button {
   border: 2px solid transparent;
   background-color: transparent;
   cursor: pointer;
+  /*   Need because of mixing of skew and hover parameters */
+  overflow: hidden;
 }
 
 .btn>.unskewed {
   transform: skewX(10deg);
 }
 
-.btn-fill {
-  background-color: var(--card-color);
-  color: #ffffff;
+/* Btn animation */
+.btn::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 0;
+  height: 100%;
+  transition: .1s linear
 }
 
-.btn-fill:hover,
-.btn-fill:focus {
-  background-color: #ffffff;
-  color: var(--card-color);
-  border-color: var(--card-color);
+.btn:hover::before,
+.btn:focus::before {
+  width: 100%;
+  transition: .1s linear
 }
 
+/* Btn-outline-light animation */
+.btn-outline-light {
+  border-color: var(--hero-color);
+  color: var(--hero-color);
+}
+
+.btn-outline-light::before {
+  background-color: var(--secondary-color);
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+  color: var(--main-color);
+  transition: .1s .05s linear;
+}
+
+/* Btn-outline-dark  animation */
 .btn-outline-dark {
   border-color: var(--main-color);
   color: var(--main-color);
 }
 
-.btn-outline-dark:hover,
-.btn-outline-dark:focus {
-  background-color: var(--secondary-color);
-  color: var(--main-color);
+.btn-outline-dark::before {
+  background-color: var(--main-color);
 }
 
-.btn-outline-light {
-  border-color: #ffffff;
+.btn-outline-dark:hover,
+.btn-outline-dark:focus {
+  color: var(--secondary-color);
+  transition: .1s .05s linear;
+}
+
+/* Btn-filled animation */
+.btn-fill {
+  background-color: var(--card-color);
   color: #ffffff;
 }
 
-.btn-outline-light:hover,
-.btn-outline-light:focus {
-  background-color: var(--secondary-color);
-  color: var(--main-color);
+.btn-fill::before {
+  background-color: #ffffff;
 }
 
-.btn-outline-dark:hover,
-.btn-outline-dark:focus {
-  background-color: var(--main-color);
-  color: var(--secondary-color);
+.btn-fill:hover,
+.btn-fill:focus {
+  color: #000000;
+  transition: .1s .05s linear;
 }
+
+
 
 /* Position */
 .horizontal-position {
@@ -164,6 +193,7 @@ button {
   text-align: center;
 }
 
+/* Mutual styles */
 .subtitle {
   font-size: 6rem;
   color: var(--main-color);
@@ -242,13 +272,43 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: .1s linear
+}
+
+.social-item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--main-color);
+  width: 0;
+  height: 100%;
+  transition: .1s linear
+}
+
+.social-item i {
+  /* Перекрывалась заливкой */
+  position: relative;
+  ы z-index: 9999;
 }
 
 .social-item:hover,
 .social-item:focus {
-  background-color: var(--main-color);
   color: var(--secondary-color);
+  transition: .1s linear
 }
+
+.social-item:hover::before,
+.social-item:focus::before {
+  width: 100%;
+  transition: .1s linear
+}
+
+
+
+
 
 .address {
   font-size: 2.4rem;
