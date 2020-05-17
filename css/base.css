@@ -47,7 +47,7 @@ body {
 }
 
 .section-padding {
-  padding: 15rem 0;
+  padding: 13rem 0;
 }
 
 .small-section-padding {
@@ -206,4 +206,68 @@ button {
   font-size: 3.6rem;
   color: var(--card-color);
   margin-bottom: 4rem;
+}
+
+.terms-item {
+  font-size: 18px;
+  color: var(--footer-main-color);
+  margin-right: 50px;
+  position: relative;
+}
+
+.terms-item::before {
+  position: absolute;
+  top: 100%;
+  content: '';
+  width: 0;
+  height: 1px;
+  background-color: var(--footer-main-color);
+  transition: .1s ease;
+}
+
+.terms-item:hover:before,
+.terms-item:focus:before {
+  width: 100%;
+  transition: .1s ease;
+}
+
+.social-item {
+  font-size: 2rem;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  margin-left: 2rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-item:hover,
+.social-item:focus {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}
+
+.address {
+  font-size: 2.4rem;
+  color: var(--footer-main-color);
+  position: relative;
+}
+
+.address:nth-child(2)::before {
+  position: absolute;
+  top: 100%;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: var(--footer-main-color);
+  transition: .1s ease;
+}
+
+.address:nth-child(2):hover::before,
+.address:nth-child(2):focus::before {
+  width: 0;
+  transition: .1s ease;
 }

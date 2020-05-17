@@ -409,7 +409,6 @@
 
 .marketplace-linked {
   margin: 11rem 0;
-
 }
 
 .marketplace-linked-new:before {
@@ -430,7 +429,44 @@
 
 }
 
+/* Тут у меня появилась проблема с разной высотой картинок */
 .marketplace-card img {
   height: 220px;
   width: auto;
+}
+
+/* Footer */
+.footer-top {
+  margin-bottom: 10rem;
+}
+
+.footer-mid {
+  margin-bottom: 10rem;
+}
+
+.footer-tel {
+  font-size: 3rem;
+  color: var(--main-color);
+  position: relative;
+}
+
+.footer-tel:before {
+  position: absolute;
+  top: 100%;
+  content: '';
+  width: 0;
+  height: 1px;
+  background-color: var(--main-color);
+  transition: .1s ease;
+}
+
+.footer-tel:hover:before,
+.footer-tel:focus:before {
+  width: 100%;
+  transition: .1s ease;
+}
+
+.footer-copy {
+  font-size: 1.8rem;
+  color: var(--footer-main-color)
 }
