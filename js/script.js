@@ -17,8 +17,12 @@ $('.slider').on('beforeChange', function (event, slick, currentSlide, nextSlide)
 
   videos.forEach((e) => {
     e.pause();
+    setTimeout(() => e.nextElementSibling.classList.remove(`hide`), 1500);
+    e.controls = false;
   })
 });
+
+const videoSlider = document.getElementById('video-slider');
 
 videoSlider.addEventListener('click', function (e) {
   if (e.target.classList.contains('video-button')) {
@@ -27,13 +31,14 @@ videoSlider.addEventListener('click', function (e) {
     video.play();
     video.controls = true;
   }
-  if (e.target.classList.contains(`video-item`)) {
+  if (e.target.tagName == `VIDEO`) {
     e.target.controls = false;
     e.target.pause();
     e.target.nextElementSibling.classList.remove(`hide`);
     e.target.addEventListener(`ended`, function () {
       e.target.load();
       e.target.nextElementSibling.classList.remove(`hide`);
+      e.target.controls = false;
     })
   }
 });

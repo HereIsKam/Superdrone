@@ -470,3 +470,6 @@
   font-size: 1.8rem;
   color: var(--footer-main-color)
 }
+
+/* Import Medeia query */
+@import '../css/media-q.css'
