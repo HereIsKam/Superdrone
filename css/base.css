@@ -63,7 +63,13 @@ body {
 }
 
 /* Screen readers only */
-.sr-only {
+.screen-reader-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
@@ -82,8 +88,10 @@ button {
   border: 2px solid transparent;
   background-color: transparent;
   cursor: pointer;
+  position: relative;
   /*   Need because of mixing of skew and hover parameters */
   overflow: hidden;
+
 }
 
 .btn>.unskewed {
@@ -98,13 +106,13 @@ button {
   content: '';
   width: 0;
   height: 100%;
-  transition: .1s linear
+  transition: .1s;
 }
 
 .btn:hover::before,
 .btn:focus::before {
   width: 100%;
-  transition: .1s linear
+  transition: .1s;
 }
 
 /* Btn-outline-light animation */
@@ -120,7 +128,7 @@ button {
 .btn-outline-light:hover,
 .btn-outline-light:focus {
   color: var(--main-color);
-  transition: .1s .05s linear;
+  transition: .1s .05s;
 }
 
 /* Btn-outline-dark  animation */
@@ -136,7 +144,7 @@ button {
 .btn-outline-dark:hover,
 .btn-outline-dark:focus {
   color: var(--secondary-color);
-  transition: .1s .05s linear;
+  transition: .1s .05s;
 }
 
 /* Btn-filled animation */
@@ -152,7 +160,7 @@ button {
 .btn-fill:hover,
 .btn-fill:focus {
   color: #000000;
-  transition: .1s .05s linear;
+  transition: .1s .05s;
 }
 
 
@@ -252,13 +260,13 @@ button {
   width: 0;
   height: 1px;
   background-color: var(--footer-main-color);
-  transition: .1s ease;
+  transition: .1s;
 }
 
 .terms-item:hover:before,
 .terms-item:focus:before {
   width: 100%;
-  transition: .1s ease;
+  transition: .1s;
 }
 
 .social-item {
@@ -270,8 +278,9 @@ button {
   width: 60px;
   height: 60px;
   position: relative;
+  transition: .1s;
+  /*   Need because of mixing of hover parameters */
   overflow: hidden;
-  transition: .1s linear
 }
 
 .social-item:before {
@@ -282,25 +291,25 @@ button {
   background-color: var(--main-color);
   width: 0;
   height: 100%;
-  transition: .1s linear
+  transition: .1s;
 }
 
 .social-item i {
-  /* Перекрывалась заливкой */
   position: relative;
-  z-index: 9999;
 }
 
 .social-item:hover,
 .social-item:focus {
   color: var(--secondary-color);
-  transition: .1s linear
+  transition: .1s
 }
 
 .social-item:hover::before,
 .social-item:focus::before {
   width: 100%;
-  transition: .1s linear
+  transition: .1s;
+  position: absolute;
+  z-index: 0;
 }
 
 .address {
@@ -309,18 +318,28 @@ button {
   position: relative;
 }
 
-.address:nth-child(2)::before {
+.address:before {
   position: absolute;
   top: 100%;
   content: '';
-  width: 100%;
+  width: 0;
   height: 1px;
   background-color: var(--footer-main-color);
-  transition: .1s ease;
+  transition: .1s;
+}
+
+.address:nth-child(2)::before {
+  width: 100%;
+}
+
+.address:hover::before,
+.address:focus::before {
+  width: 55%;
+  transition: .1s;
 }
 
 .address:nth-child(2):hover::before,
 .address:nth-child(2):focus::before {
   width: 0;
-  transition: .1s ease;
+  transition: .1s;
 }
