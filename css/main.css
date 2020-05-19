@@ -539,6 +539,10 @@
     margin-bottom: 5rem;
   }
 
+  .marketplace-linked {
+    margin: 5rem 0;
+  }
+
   .marketplace-linked-new:before {
     right: 40px;
     width: 100px;
@@ -553,11 +557,16 @@
   }
 
   .logo {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 
   .nav-item a {
     font-size: 1.6rem;
+    margin: 0 1rem;
+  }
+
+  .cart {
+    margin-right: 3rem;
   }
 
   .btn {
@@ -570,6 +579,11 @@
 
   .hero h1 {
     line-height: 11rem;
+  }
+
+  .about {
+    /* For picture not to drop out of section */
+    overflow: hidden;
   }
 
   .about-info p {
@@ -600,7 +614,8 @@
   }
 
   .parameters-data {
-    height: 580px;
+    height: 540px;
+    width: 55%;
   }
 
   .parameters-data dt {
@@ -608,7 +623,7 @@
   }
 
   .parameters-info dd {
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin-bottom: 5rem;
   }
 
@@ -665,12 +680,23 @@
     padding: 2rem 2rem;
   }
 
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .logo {
     font-size: 2.8rem;
+    /* Need for correct work flex align-center (.nav-item a margin)*/
+    margin-bottom: 2rem;
   }
 
   .nav-item a {
-    margin: 0 1.2rem;
+    margin: 0 1.2rem 2rem 1.2rem;
+  }
+
+  .nav-btns {
+    margin-bottom: 2rem;
   }
 
   .cart {
@@ -683,7 +709,7 @@
   }
 
   .hero {
-    padding: 12rem 0 8rem 0;
+    padding: 15rem 0 8rem 0;
   }
 
   .hero h1 {
@@ -751,7 +777,7 @@
 
   .parameters-data {
     height: 430px;
-    width: 80%;
+    width: 68%;
   }
 
   .parameters-info dd {
@@ -827,13 +853,11 @@
     padding: 15px;
   }
 
-  .nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+
 
   .logo {
     font-size: 1.8rem;
+    margin: 0;
   }
 
   .nav-item a {
@@ -882,9 +906,26 @@
     padding: 5rem 0;
   }
 
-  .about-pic {
-    right: -30%;
+  .about-info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
+
+  .about-pic {
+    position: static;
+    transform: none;
+    margin-right: -30px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .btn.btn-outline-dark {
+    align-self: center;
+  }
+
 
   .small-subtitle {
     font-size: 4rem;
@@ -923,6 +964,7 @@
     max-width: 100%;
     transform: none;
     margin-left: -30px;
+    object-fit: cover;
   }
 
   .parameters-data {
@@ -930,22 +972,40 @@
     width: 100%;
   }
 
+  .marketplace-items {
+    justify-content: center;
+  }
+
+  .marketplace-card {
+    width: 75%;
+    margin-bottom: 5rem;
+    padding: 3.5rem 2.5rem;
+  }
+
   .marketplace-card img {
     height: 150px;
   }
 
   .marketplace-name {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     margin-bottom: 1.5rem;
     height: 3.2rem;
   }
 
+  .marketplace-price {
+    font-size: 3.6rem;
+  }
+
+  .marketplace-linked {
+    margin: 5rem 0;
+  }
+
   .marketplace-linked-new:before {
-    width: 40px;
-    height: 40px;
-    top: 20px;
-    right: 20px;
-    font-size: 1.2rem;
+    width: 60px;
+    height: 60px;
+    top: 60px;
+    right: 60px;
+    font-size: 1.6rem;
   }
 
   .footer-top {
@@ -964,4 +1024,17 @@
   .footer-copy {
     text-align: center;
   }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
 }
