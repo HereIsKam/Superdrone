@@ -360,6 +360,8 @@
 
 .appearance {
   background-color: #ffffff;
+  /* for slider to be contained in the section during adaptation */
+  overflow: hidden;
 }
 
 .appearance-slider-cover {
@@ -1058,4 +1060,83 @@
     margin: 0;
   }
 
+  .nav-bar {
+    align-items: baseline;
+  }
+
+  .nav-bar a {
+    font-size: 1.2rem;
+  }
+
+  .hero {
+    padding: 17rem 0 5rem 0;
+  }
+
+  .hero h1 {
+    line-height: 5rem;
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 3.5rem;
+  }
+
+  .about-info p {
+    text-align: justify;
+    line-height: 2.5rem;
+  }
+
+  .small-subtitle {
+    font-size: 2.3rem;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  .parameters-data {
+    height: auto;
+  }
+
+  .parameters-info dd:nth-of-type(6),
+  .parameters-info dd:nth-of-type(12) {
+    margin-bottom: 3rem;
+  }
+
+  .marketplace-linked {
+    margin: 0;
+  }
+
+  .marketplace-linked-new:before {
+    top: 30px;
+    right: 30px;
+  }
+
+  .marketplace-name {
+    font-size: 1.6rem;
+    height: 2rem;
+  }
+
+  .marketplace-price {
+    font-size: 2.6rem;
+  }
+
+  .terms-item {
+    font-size: 1.1rem;
+    margin-right: 1rem;
+  }
+
+  .footer-mid {
+    flex-wrap: wrap;
+  }
+
+  .social-item {
+    margin: 0 1rem;
+  }
+
+  .address:first-child {
+    margin-bottom: 2rem;
+  }
 }
