@@ -243,11 +243,11 @@ button {
 .marketplace-price {
   font-size: 3.6rem;
   color: var(--card-color);
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
 }
 
 .terms-item {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: var(--footer-main-color);
   margin-right: 50px;
   position: relative;

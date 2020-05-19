@@ -396,6 +396,10 @@
   background-color: var(--background-accent);
 }
 
+.marketplace-items {
+  flex-wrap: wrap;
+}
+
 .marketplace-card {
   width: 32%;
   background-color: #ffffff;
@@ -404,9 +408,6 @@
   position: relative;
 }
 
-.marketplace p {
-  margin-bottom: 10rem;
-}
 
 .marketplace-linked {
   margin: 9rem 0;
@@ -472,4 +473,495 @@
 }
 
 /* Import Medeia query */
-@import '../css/media-q.css'
+@import 'mediaq.css';
+
+@media (max-width: 1439.98px) {
+  .container {
+    width: 1140px;
+    padding: 0 15px;
+  }
+
+  .header {
+    padding: 4rem 4rem;
+  }
+
+  .hero h1 {
+    font-size: 9rem;
+  }
+
+  .btn {
+    padding: 1.5rem 4.5rem;
+  }
+
+  .hero-content {
+    margin-bottom: 11rem;
+  }
+
+  .small-section-padding {
+    padding: 10rem 0;
+  }
+
+  .subtitle {
+    font-size: 5rem;
+  }
+
+  .about-info p {
+    font-size: 2.2rem;
+    line-height: 4rem;
+  }
+
+  .video-button,
+  .video-button::before,
+  .video-button::after {
+    font-size: 6.5rem;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+
+  .video-button:hover,
+  .video-button:focus,
+  .video-button:hover::before,
+  .video-button:focus::before,
+  .video-button:hover::after,
+  .video-button:focus::after {
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+
+  .description {
+    margin: 0 auto 10rem auto;
+  }
+
+  .parameters-data {
+    height: 600px;
+  }
+
+  .parameters-info dd {
+    font-size: 2.6rem;
+    margin-bottom: 5rem;
+  }
+
+  .marketplace-linked-new:before {
+    right: 40px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  .nav-item a {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+  }
+
+  .hero {
+    padding: 20rem 0 8rem 0;
+  }
+
+  .hero h1 {
+    line-height: 11rem;
+  }
+
+  .about-info p {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+
+  .bottom-distance {
+    margin-bottom: 3.5rem;
+  }
+
+  .description {
+    width: 70%;
+  }
+
+  .services-card {
+    width: 31%;
+  }
+
+  .subtitle-small {
+    font-size: 3.2rem;
+    padding-top: 10rem;
+  }
+
+  .decription-small {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+
+  .parameters-data {
+    height: 580px;
+  }
+
+  .parameters-data dt {
+    margin: 0 2rem 1rem 0;
+  }
+
+  .parameters-info dd {
+    font-size: 2.4rem;
+    margin-bottom: 5rem;
+  }
+
+  .marketplace-linked {
+    margin: 1rem 0 2rem 0;
+  }
+
+  .marketplace-linked-new:before {
+    width: 90px;
+    height: 90px;
+    top: 30px;
+    right: 30px;
+  }
+
+  .marketplace-name {
+    font-size: 2.2rem;
+  }
+
+  .marketplace-price {
+    font-size: 3.4rem;
+    margin-bottom: 5rem;
+  }
+
+  .footer {
+    padding: 8rem 0;
+  }
+
+  .footer-top {
+    margin-bottom: 5rem;
+  }
+
+  .address {
+    font-size: 2.2rem;
+  }
+
+  .footer-tel {
+    font-size: 2.8rem;
+    color: var(--main-color);
+    position: relative;
+  }
+
+  .footer-mid {
+    margin-bottom: 5rem;
+  }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .header {
+    padding: 2rem 2rem;
+  }
+
+  .logo {
+    font-size: 2.8rem;
+  }
+
+  .nav-item a {
+    margin: 0 1.2rem;
+  }
+
+  .cart {
+    margin-right: 3rem;
+  }
+
+  .btn {
+    padding: 1.3rem 3.5rem;
+    font-size: 1.4rem;
+  }
+
+  .hero {
+    padding: 12rem 0 8rem 0;
+  }
+
+  .hero h1 {
+    line-height: 9rem;
+    font-size: 7rem;
+  }
+
+  .hero p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 4.5rem;
+  }
+
+  .hero-content {
+    margin-bottom: 5rem;
+  }
+
+  .subtitle {
+    font-size: 4rem;
+  }
+
+  .about-info {
+    width: 80%;
+  }
+
+  .about-pic {
+    right: -25%;
+  }
+
+  .about-info p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  .description {
+    width: 90%;
+  }
+
+  .description {
+    margin: 0 auto 6rem auto;
+  }
+
+  .services-card {
+    width: 33.33%;
+  }
+
+  .subtitle-small {
+    font-size: 2.6rem;
+  }
+
+  .services-icon-cam:before,
+  .services-icon-watch:before,
+  .services-icon-speed:before {
+    transform: scale(0.7);
+    transform-origin: 0;
+  }
+
+  .parameters-info {
+    justify-content: center;
+  }
+
+  .parameters-info img {
+    left: -25%;
+  }
+
+  .parameters-data {
+    height: 430px;
+    width: 80%;
+  }
+
+  .parameters-info dd {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .marketplace-card {
+    padding: 15px;
+  }
+
+  .marketplace-linked {
+    margin: 0;
+  }
+
+  .marketplace-name {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .marketplace-price {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .marketplace-linked-new:before {
+    width: 60px;
+    height: 60px;
+    top: 60px;
+    font-size: 1.6rem;
+  }
+
+  .footer-top {
+    margin-bottom: 3rem;
+  }
+
+  .terms-item {
+    font-size: 1.6rem;
+    margin-right: 3rem;
+  }
+
+  .social-item {
+    font-size: 1.6rem;
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-mid {
+    margin-bottom: 3rem;
+  }
+
+  .address {
+    font-size: 1.6rem;
+  }
+
+  .footer-tel {
+    font-size: 2rem;
+  }
+
+  .footer-copy {
+    font-size: 1.6rem;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .header {
+    padding: 15px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .nav-item a {
+    margin: 0 1rem;
+  }
+
+  .nav-item a {
+    font-size: 1.3rem;
+  }
+
+  .nav-btns {
+    margin-top: 2rem;
+  }
+
+  .cart {
+    margin-right: 1.5rem;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  .hero {
+    padding: 12rem 0 5rem 0;
+  }
+
+  .hero-content {
+    margin-bottom: 4rem;
+  }
+
+  .hero h1 {
+    line-height: 6rem;
+    font-size: 5rem;
+  }
+
+  .hero p {
+    margin-bottom: 3rem;
+  }
+
+  .hero-arrows {
+    font-size: 2.6rem;
+  }
+
+  .small-section-padding {
+    padding: 5rem 0;
+  }
+
+  .about-pic {
+    right: -30%;
+  }
+
+  .small-subtitle {
+    font-size: 4rem;
+  }
+
+  .subtitle-small {
+    font-size: 2rem;
+    padding-top: 8rem;
+  }
+
+  .services-cover {
+    flex-wrap: wrap;
+  }
+
+  .services-card {
+    width: 100%;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-icon-cam:before,
+  .services-icon-watch:before,
+  .services-icon-speed:before {
+    left: 50%;
+    transform: scale(0.7)translateX(-50%);
+  }
+
+  .parameters-info {
+    flex-wrap: wrap;
+  }
+
+  .parameters-info img {
+    position: static;
+    max-width: 100%;
+    transform: none;
+    margin-left: -30px;
+  }
+
+  .parameters-data {
+    height: 430px;
+    width: 100%;
+  }
+
+  .marketplace-card img {
+    height: 150px;
+  }
+
+  .marketplace-name {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    height: 3.2rem;
+  }
+
+  .marketplace-linked-new:before {
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+    font-size: 1.2rem;
+  }
+
+  .footer-top {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-terms {
+    margin-bottom: 3rem;
+  }
+
+  .footer-mid {
+    align-items: flex-start;
+  }
+
+  .footer-copy {
+    text-align: center;
+  }
+}
