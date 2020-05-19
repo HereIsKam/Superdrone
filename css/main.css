@@ -1064,8 +1064,11 @@
     align-items: baseline;
   }
 
+
   .nav-bar a {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    white-space: nowrap;
+    margin: 0 0.5rem;
   }
 
   .hero {
@@ -1074,7 +1077,7 @@
 
   .hero h1 {
     line-height: 5rem;
-    font-size: 3.5rem;
+    font-size: 3.8rem;
   }
 
   .subtitle {
@@ -1096,6 +1099,36 @@
     line-height: 2.2rem;
   }
 
+  .video-button,
+  .video-button::before,
+  .video-button::after {
+    font-size: 6.5rem;
+    transform: translate(-50%, -50%) scale(0.3);
+  }
+
+  .video-button:hover,
+  .video-button:focus,
+  .video-button:hover::before,
+  .video-button:focus::before,
+  .video-button:hover::after,
+  .video-button:focus::after {
+    transform: translate(-50%, -50%) scale(0.4);
+  }
+
+  .btn-arrow {
+    font-size: 3rem;
+  }
+
+  .btn-right,
+  .btn-right-app {
+    right: 0;
+  }
+
+  .btn-left,
+  .btn-left-app {
+    left: 0;
+  }
+
   .parameters-data {
     height: auto;
   }
@@ -1105,8 +1138,10 @@
     margin-bottom: 3rem;
   }
 
+  .appearance-pic {}
+
   .marketplace-linked {
-    margin: 0;
+    margin: 0 5rem;
   }
 
   .marketplace-linked-new:before {
@@ -1138,5 +1173,6 @@
 
   .address:first-child {
     margin-bottom: 2rem;
+    width: 100%;
   }
 }
