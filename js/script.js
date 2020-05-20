@@ -11,7 +11,7 @@ $('.appearance-slider').slick({
   prevArrow: '<button class="btn-arrow btn-left-app fas fa-arrow-left"><span class="screen-reader-only">Previous photo</span></button>',
   nextArrow: '<button class="btn-arrow btn-right-app fas fa-arrow-right"><span class="screen-reader-only">Next photo</span></button>',
   responsive: [{
-    breakpoint: 768,
+    breakpoint: 992,
     settings: {
       slidesToShow: 1,
       slidesToScroll: 1,
