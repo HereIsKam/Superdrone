@@ -154,8 +154,6 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-
-  /* картинка налазит на текст при моем разрешениии, если картинке не задать ширину */
   max-width: 50%;
 }
 
@@ -478,6 +476,7 @@
 /* Import Medeia query */
 @import 'mediaq.css';
 
+/* // Extra-Large devices (desktops, less than 1440px) */
 @media (max-width: 1439.98px) {
   .container {
     width: 1140px;
@@ -883,12 +882,14 @@
     margin: 0;
   }
 
-  .nav-item a {
-    margin: 0 1rem;
+  .nav-bar {
+    flex-wrap: wrap;
   }
 
-  .nav-item a {
-    font-size: 1.3rem;
+  .nav-bar a {
+    font-size: 1.6rem;
+    white-space: nowrap;
+    margin: 0.5rem 0.5rem;
   }
 
   .nav-btns {
@@ -944,11 +945,6 @@
     display: block;
     object-fit: cover;
   }
-
-  .btn.btn-outline-dark {
-    align-self: center;
-  }
-
 
   .small-subtitle {
     font-size: 4rem;
@@ -1064,13 +1060,6 @@
     align-items: baseline;
   }
 
-
-  .nav-bar a {
-    font-size: 1rem;
-    white-space: nowrap;
-    margin: 0 0.5rem;
-  }
-
   .hero {
     padding: 17rem 0 5rem 0;
   }
@@ -1138,10 +1127,9 @@
     margin-bottom: 3rem;
   }
 
-  .appearance-pic {}
 
   .marketplace-linked {
-    margin: 0 5rem;
+    margin: 0;
   }
 
   .marketplace-linked-new:before {
@@ -1159,7 +1147,7 @@
   }
 
   .terms-item {
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     margin-right: 1rem;
   }
 
@@ -1175,4 +1163,50 @@
     margin-bottom: 2rem;
     width: 100%;
   }
+}
+
+/* Extra small devices (portrait phones, less than 320px) */
+@media (max-width: 320px) {
+  .nav-bar {
+    flex-direction: column;
+  }
+
+  .nav-bar a {
+    font-size: 1.6rem;
+    margin: .5rem 0rem;
+  }
+
+  .hero {
+    padding: 23rem 0 5rem 0;
+  }
+
+  .footer-terms {
+    margin: 0;
+    flex-direction: column;
+    order: 1;
+  }
+
+  .terms-item {
+    font-size: 1.6rem;
+    margin: 1rem;
+  }
+
+  .footer-social {
+    margin-bottom: 3rem;
+  }
+
+  .address:hover::before,
+  .address:focus::before {
+    width: 47%;
+    transition: .1s;
+  }
+
+  .footer-mid {
+    align-content: baseline;
+  }
+
+  .address {
+    margin-bottom: 2rem;
+  }
+
 }

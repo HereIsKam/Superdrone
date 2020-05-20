@@ -9,8 +9,17 @@ $('.appearance-slider').slick({
   slidesToShow: 1,
   centerPadding: '300px',
   prevArrow: '<button class="btn-arrow btn-left-app fas fa-arrow-left"><span class="screen-reader-only">Previous photo</span></button>',
-  nextArrow: '<button class="btn-arrow btn-right-app fas fa-arrow-right"><span class="screen-reader-only">Next photo</span></button>'
+  nextArrow: '<button class="btn-arrow btn-right-app fas fa-arrow-right"><span class="screen-reader-only">Next photo</span></button>',
+  responsive: [{
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerMode: false,
+    }
+  }]
 })
+
 
 $('.slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
   const videos = document.querySelectorAll('.slider video');
