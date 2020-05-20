@@ -738,11 +738,11 @@
   }
 
   .about-info {
-    width: 80%;
+    width: 60%;
   }
 
   .about-pic {
-    right: -25%;
+    right: -10%;
   }
 
   .about-info p {
@@ -773,12 +773,9 @@
     transform-origin: 0;
   }
 
-  .parameters-info {
-    justify-content: center;
-  }
 
   .parameters-info img {
-    left: -25%;
+    left: -15%;
   }
 
   .parameters-data {
@@ -936,13 +933,14 @@
   }
 
   .about-pic {
-    position: static;
+    position: relative;
     transform: none;
-    margin-right: -30px;
     max-width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
+    top: 0;
+    right: -15px;
   }
 
   .small-subtitle {
@@ -978,11 +976,12 @@
   }
 
   .parameters-info img {
-    position: static;
+    position: relative;
     max-width: 100%;
     transform: none;
-    margin-left: -30px;
     object-fit: cover;
+    top: 0;
+    left: -15px;
   }
 
   .parameters-data {
@@ -1037,6 +1036,10 @@
 
   .footer-mid {
     align-items: flex-start;
+  }
+
+  .address:first-child {
+    width: 40%;
   }
 
   .footer-copy {
@@ -1126,6 +1129,14 @@
     margin-bottom: 3rem;
   }
 
+  .marketplace-card {
+    width: 100%;
+    padding: 7rem 2.5rem 3.5rem 2.5rem;
+  }
+
+  .marketplace-card img {
+    height: auto;
+  }
 
   .marketplace-linked {
     margin: 0;
@@ -1145,22 +1156,43 @@
     font-size: 2.6rem;
   }
 
+  .footer-terms {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .terms-item {
-    font-size: 1.6rem;
-    margin-right: 1rem;
+    font-size: 2rem;
+    margin: 1.5rem;
   }
 
   .footer-mid {
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
 
   .social-item {
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
     margin: 0 1rem;
   }
 
+  .address {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+  }
+
   .address:first-child {
-    margin-bottom: 2rem;
-    width: 100%;
+    text-align: center;
+    width: auto;
+
+  }
+
+  .footer-tel {
+    font-size: 2.5rem;
   }
 }
 
@@ -1186,7 +1218,6 @@
   }
 
   .terms-item {
-    font-size: 1.6rem;
     margin: 1rem;
   }
 
@@ -1202,10 +1233,6 @@
 
   .footer-mid {
     align-content: baseline;
-  }
-
-  .address {
-    margin-bottom: 2rem;
   }
 
 }

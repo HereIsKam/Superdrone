@@ -7,15 +7,5 @@
     url('../fonts/ProximaNova-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url('../fonts/ProximaNova-Bold.eot');
-  src: local('../fonts/Proxima Nova Bold'), local('ProximaNova-Bold'),
-    url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/ProximaNova-Bold.woff') format('woff'),
-    url('../fonts/ProximaNova-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+  font-display: swap;
 }

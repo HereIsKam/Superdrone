@@ -11,13 +11,30 @@ $('.appearance-slider').slick({
   prevArrow: '<button class="btn-arrow btn-left-app fas fa-arrow-left"><span class="screen-reader-only">Previous photo</span></button>',
   nextArrow: '<button class="btn-arrow btn-right-app fas fa-arrow-right"><span class="screen-reader-only">Next photo</span></button>',
   responsive: [{
-    breakpoint: 992,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      centerPadding: '100px',
+      breakpoint: 992,
+      settings: {
+        centerPadding: '180px',
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        centerPadding: '120px'
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        centerPadding: '30px'
+      }
+    },
+    {
+      breakpoint: 320,
+      settings: {
+        centerPadding: '0px'
+      }
     }
-  }]
+  ]
 })
 
 
