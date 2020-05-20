@@ -3,6 +3,8 @@
 @import 'reset.css';
 @import 'variables.css';
 @import 'base.css';
+/* Import Medeia query */
+@import 'mediaq.css';
 
 /* Header */
 .header {
@@ -472,9 +474,6 @@
   font-size: 1.8rem;
   color: var(--footer-main-color)
 }
-
-/* Import Medeia query */
-@import 'mediaq.css';
 
 /* // Extra-Large devices (desktops, less than 1440px) */
 @media (max-width: 1439.98px) {
